@@ -34,8 +34,12 @@ jobs:
       - name: Run linter (optional)
         run: npm run lint --if-present
 
-      - name: Run tests
-        run: npm test 
+      # - name: Run tests
+      #   run: npm test 
 
-      - name: Build project (optional)
-        run: npm run build --if-present 
+      # - name: Build project (optional)
+      #   run: npm run build --if-present 
+ 
+      # Run test and build together with the script we defind in the pacakge.sjon
+      - name: test and build
+        run: npm run verify
