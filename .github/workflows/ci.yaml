@@ -38,4 +38,4 @@ jobs:
         run: npm test 
 
       - name: Build project (optional)
-        run: npm run build --if-present
+        run: npm run build --if-present 
